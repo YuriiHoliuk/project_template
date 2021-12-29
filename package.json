@@ -11,7 +11,7 @@
     "build": "rm -rf dist && parcel build ./src/index.html --public-url ./",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
-    "prepare": "husky install"
+    "prepare": "husky install && cp ./.husky/pre-commit ./.git/hooks/pre-commit"
   },
   "keywords": [],
   "author": "",
